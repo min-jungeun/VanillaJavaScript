@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <script>
+        const nav_data = [
+                            {
+                                gnb_li_a : "회사소개",
+                                gnb_li_href : "./company.html"
+                            },
+                            {
+                                gnb_li_a : "제품소개",
+                                gnb_li_href : "./product.html"
+                            },
+                            {
+                                gnb_li_a : "커뮤니티",
+                                gnb_li_href : "./board.html"
+                            }
+
+                        ]
+
+                        document.body.innerHTML = nav_data[0].gnb_li_a;
+    </script>
+</body>
+</html>
