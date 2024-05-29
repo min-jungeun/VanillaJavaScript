@@ -23,3 +23,14 @@ console.log(count); //113
 lte multy = 10;
     multy = multy / 3;  //multy /= 3  나누기
 
+//문자연산식
+
+let mystudy = "리액트";
+    mystudy = "리액트" + "뷰" ; //mystudy +="뷰"
+
+
+let startjs = 10;
+    startjs += "10"; //20
+    startjs += "원"; //원에서 문자로 됨
+    startjs += "100";
+    startjs += "100";  //20원100100  ->문자결합은 결합만 하기 때문에 연결만됨
