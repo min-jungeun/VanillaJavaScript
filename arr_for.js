@@ -7,6 +7,7 @@ for(var i = 0; i < 5; i++ ){
 console.log("나는 다섯번 실행되지");
 }
 
+//연산식
 let count = 10;
     count += 100; //110
     count += 1; //111
@@ -18,3 +19,7 @@ console.log(count); //113
 // count++; //10
 // count; //11
 // ++count; //12
+
+lte multy = 10;
+    multy = multy / 3;  //multy /= 3  나누기
+
