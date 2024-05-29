@@ -7,7 +7,7 @@
     
 </head>
 <body>
-    
+    <ul id="gnb"></ul>
     <script>
         const nav_data = [
                             {
@@ -25,7 +25,23 @@
 
                         ]
 
-                        document.body.innerHTML = nav_data[0].gnb_li_a;
+document.querySelector("#gnb").innerHTML = `
+                                <li>
+                                    <a href="${nav_data[0].gnb_li_href}">
+                                        ${nav_data[0].gnb_li_a}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="${nav_data[1].gnb_li_href}">
+                                        ${nav_data[1].gnb_li_a}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="${nav_data[2].gnb_li_href}">
+                                        ${nav_data[2].gnb_li_a}
+                                    </a>
+                                </li>
+                                `;
     </script>
 </body>
 </html>
