@@ -59,7 +59,8 @@ let mystudy = "리액트";
         {
             gnb_li_a : "인트라넷",
             gnb_li_href : "./intro.html"
-        }
+        },
+        
     ]
 
     // object 접근법
