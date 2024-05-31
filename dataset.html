@@ -22,7 +22,11 @@
 
        btns.forEach(function(ele, idx){
             // console.log("태그" , ele, "순번", idx)
-            ele.addEventListener('click', function(){})
+            ele.addEventListener('click', function(){
+                console.log(this); // this 함수 안에서 나를 칭함. 클릭 당한 것. 방금 이벤트를 발생한 것 
+                targetbox.innerHTML = this.dataset.text;
+                targetbox.style.backgroundColor = this.dataset.bg;
+            })
        })
 
     </script>
