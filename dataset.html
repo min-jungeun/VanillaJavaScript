@@ -6,13 +6,25 @@
     <title>html 태그에 데이터 저장</title>
 </head>
 <body>
-    <p data-content="html 태그에 데이터를 저장한 것임"
-        data-cls="text-dark bg-white border">여기 글자 수정해줘</p>
+    <div id="box" style="display:inline-block">
+        버튼을 클릭해보세요.
+   </div>
+   <div class="btns">
+      <button data-bg="red" data-text="빨강색">1</button>
+      <button data-bg="yellow" data-text="노랑색">2</button>
+      <button data-bg="blue" data-text="파랑색">3</button>
+      <button data-bg="#ddccff" data-text="파랑색">4</button>
+   </div>
     
     <script>
-       const ptag = document.querySelector("p");
-       ptag.innerHTML = ptag.dataset.content;
-       ptag.classList = ptag.dataset.cls;
+       const targetbox = document.getElementById("box");  //메서드 직접 연결
+       const btns = document.querySelectorAll(".btns button"); //집합이기 때문에 forEach를 껴야함
+
+       btns.forEach(function(ele, idx){
+            // console.log("태그" , ele, "순번", idx)
+            ele.addEventListener('click', function(){})
+       })
+
     </script>
 </body>
 </html>
