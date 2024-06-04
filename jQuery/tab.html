@@ -20,7 +20,7 @@
   <script>
     $(document).ready(function(){
         //여러번 써도 된다. 
-        $("tab li").click(function(){
+        $("#tab li").click(function(){
             const targetdiv = $(this).find('a').attr('href');
             $(targetdiv).removeClass('d-none').siblings().addClass('d-none');
             $(this).addClass('on').siblings().removeClass('on');
